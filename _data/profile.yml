@@ -48,6 +48,10 @@ education:
   date: 2014 – Apr. 2019
 
 experience:
+- name: Chewy
+  position: Machine Learning Intern II
+  dept: "Bellevue, WA - AI Shopping Assistant"
+  date: Jun. 2026 – Aug. 2026
 - name: Meta
   position: Software Engineer Intern
   dept: "Seattle, WA — Large-scale feed ranking systems"
@@ -59,10 +63,10 @@ experience:
 - name: Florida State University
   position: Graduate Teaching Assistant
   dept: "Dept. of Computer Science"
-  date: Jan. 2021 – Jul. 2024
+  date: Jan. 2021 – Present
 - name: CoKreates Limited
   position: Software Developer
-  dept: "Dhaka, Bangladesh — ERP system (Spring Boot, Angular)"
+  dept: "Dhaka, Bangladesh — ERP system"
   date: Aug. 2019 – Dec. 2020
 
 awards:
