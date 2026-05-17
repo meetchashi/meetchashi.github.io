@@ -1,0 +1,110 @@
+---
+layout: default
+title: Projects
+navbar_title: Projects
+---
+
+<div class="row mt-4">
+    <div class="col">
+        <h2 class="mb-1">Selected Projects</h2>
+        <p class="text-muted mb-4">
+            A selection of ML, NLP, and systems projects built during graduate study and independent research.
+        </p>
+
+        <!-- Project: De Novo Peptide Sequencing -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <h5 class="font-weight-normal mb-1">Reliability Limits of Deep De Novo Peptide Sequencing</h5>
+                    <span class="text-muted small ml-2">2025</span>
+                </div>
+                <p class="text-muted small mb-2"><em>Transformers, Pyteomics</em></p>
+                <p class="mb-2">
+                    Found <strong>73.6%</strong> and <strong>95.8%</strong> prediction instability in Casanovo and
+                    &pi;-PrimeNovo under physics-preserving spectral perturbations, revealing fundamental reliability
+                    gaps in de novo sequencing models and raising questions about their deployment in clinical proteomics.
+                </p>
+                <a href="https://github.com/meetchashi/denovo-reliability-eval/tree/main" target="_blank" class="small">
+                    <i class="fab fa-github"></i> Codebase
+                </a>
+            </div>
+        </div>
+
+        <!-- Project: Private LLM -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <h5 class="font-weight-normal mb-1">Deciphering Poorly Formatted Text Using Private LLM</h5>
+                    <span class="text-muted small ml-2">2023</span>
+                </div>
+                <p class="text-muted small mb-2"><em>Transformers, PEFT, BitsAndBytes, LoRA</em></p>
+                <p class="mb-2">
+                    Processed unstructured text using private LLMs hosted locally for data privacy.
+                    Applied <strong>PEFT (LoRA)</strong> for efficient fine-tuning of summarizers and classifiers,
+                    boosting performance through prompt engineering without full-model retraining.
+                </p>
+                <a href="https://github.com/meetchashi/private_llm" target="_blank" class="small">
+                    <i class="fab fa-github"></i> Codebase
+                </a>
+            </div>
+        </div>
+
+        <!-- Project: Time Series Classification -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <h5 class="font-weight-normal mb-1">Multivariate Time Series Classification for ICH Outcome Prediction</h5>
+                    <span class="text-muted small ml-2">2023</span>
+                </div>
+                <p class="text-muted small mb-2"><em>PyTorch, Scikit-learn, XGBoost, tsfresh</em></p>
+                <p class="mb-2">
+                    Built a predictive <strong>XGBoost</strong> model to forecast intracerebral hemorrhage (ICH) outcomes
+                    using time-series ICU data and PubMed radiology reports. Achieved <strong>74.11% accuracy</strong> and
+                    <strong>75.51% precision</strong>, aiding hospital decisions by identifying high-risk patients.
+                </p>
+                <a href="https://github.com/meetchashi/medical_multivariate_timeseries" target="_blank" class="small">
+                    <i class="fab fa-github"></i> Codebase
+                </a>
+            </div>
+        </div>
+
+        <!-- Project: Summarization -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <h5 class="font-weight-normal mb-1">Comparison of Summarization Techniques Using Language Models</h5>
+                    <span class="text-muted small ml-2">2023</span>
+                </div>
+                <p class="text-muted small mb-2"><em>HuggingFace Transformers, NLTK</em></p>
+                <p class="mb-2">
+                    Investigated transformer models for text summarization, comparing <strong>BERT, GPT-2, T5,</strong> and
+                    <strong>BART</strong> on medical report summarization. Addressed input size limits and domain-specific
+                    vocabulary challenges to improve summarization fidelity.
+                </p>
+                <a href="https://github.com/meetchashi/Data-Science-Graduate-Projects/tree/main" target="_blank" class="small">
+                    <i class="fab fa-github"></i> Codebase
+                </a>
+            </div>
+        </div>
+
+        <!-- Project: Style Transfer -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <h5 class="font-weight-normal mb-1">Image Style Transfer with VGG Network</h5>
+                    <span class="text-muted small ml-2">2021</span>
+                </div>
+                <p class="text-muted small mb-2"><em>PyTorch, VGG-19</em></p>
+                <p class="mb-2">
+                    Implemented neural style transfer using a pretrained <strong>VGG-19</strong> convolutional network
+                    to extract and disentangle content and style representations, generating a target image that combines
+                    the content of one image with the artistic style of another.
+                </p>
+                <a href="https://github.com/Chashi-Mahiul-Islam/style-transfer" target="_blank" class="small">
+                    <i class="fab fa-github"></i> Codebase
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>

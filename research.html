@@ -1,0 +1,144 @@
+---
+layout: default
+title: Research
+navbar_title: Research
+---
+
+<div class="row mt-4">
+    <div class="col">
+        <h2 class="mb-1">Research</h2>
+        <p class="text-muted mb-4">
+            My research focuses on <strong>robustness and explainability of large multimodal models</strong> —
+            understanding how microscopic input perturbations cascade through neural representations to cause
+            failures in vision-language understanding, embodied navigation, and LLM reasoning.
+        </p>
+
+        <!-- Project: Neural Expansion -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="font-weight-normal mb-1">Neural Expansion: A Unified Mechanism for Deep Network Generalization</h5>
+                    <span class="badge badge-pill badge-warning ml-2 text-nowrap">Manuscript Ready</span>
+                </div>
+                <p class="text-muted small mb-2"><em>Manuscript ready to submit</em></p>
+                <p class="mb-2">
+                    Proposed the <strong>Generalization Intervals</strong> framework explaining why more than ~90% of correct
+                    predictions occur within directional stability regions defined by Jacobian singular values.
+                    Provides a theoretical basis for why deep networks generalize despite overparameterization.
+                </p>
+                <a href="https://github.com/meetchashi/neural_expansion" target="_blank" class="small">
+                    <i class="fab fa-github"></i> Codebase
+                </a>
+            </div>
+        </div>
+
+        <!-- Project: LLM Instability -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="font-weight-normal mb-1">Numerical Instability and Chaos in Large Language Models</h5>
+                    <span class="badge badge-pill badge-success ml-2 text-nowrap">WCCI 2026 · Oral</span>
+                </div>
+                <p class="text-muted small mb-2"><em>IEEE World Congress on Computational Intelligence (WCCI 2026)</em></p>
+                <p class="mb-2">
+                    Discovered that microscopic floating-point input perturbations cause <strong>up to 10-million-fold
+                    amplification</strong> through LLM layers, collapsing logit margins and triggering unpredictable
+                    token flips — revealing a fundamental numerical chaos regime in large language models.
+                </p>
+                <a href="https://arxiv.org/abs/2604.13206" target="_blank" class="small mr-3">
+                    <i class="fas fa-file-alt"></i> arXiv
+                </a>
+                <a href="https://github.com/meetchashi/llm_rounding_error_instability" target="_blank" class="small">
+                    <i class="fab fa-github"></i> Codebase
+                </a>
+            </div>
+        </div>
+
+        <!-- Project: NeuroShield-ViT -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="font-weight-normal mb-1">NeuroShield-ViT: Robust Vision Transformers via Representation Vulnerability Mitigation</h5>
+                    <span class="badge badge-pill badge-success ml-2 text-nowrap">ISVC 2025 · Oral</span>
+                </div>
+                <p class="text-muted small mb-2"><em>International Symposium on Visual Computing (ISVC 2025)</em></p>
+                <p class="mb-2">
+                    Examined how small input changes affect layer-wise representations in Vision Transformers (ViTs).
+                    Proposed <strong>NeuroShield-ViT</strong> to neutralize vulnerable neurons and enhance adversarial robustness,
+                    improving classification accuracy by <strong>54.85%</strong> against PGD attacks and <strong>71.6%</strong>
+                    against IGO attacks on ImageNet1K.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project: VLN Adversarial -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="font-weight-normal mb-1">Adversarial Exploitation in Robot Vision-Language Navigation</h5>
+                    <span class="badge badge-pill badge-success ml-2 text-nowrap">IROS 2024 · Oral</span>
+                </div>
+                <p class="text-muted small mb-2"><em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2024)</em></p>
+                <p class="mb-2">
+                    Developed algorithms that exploit semantic representation gaps in vision-language navigation (VLN) models
+                    to redirect robotic agents along malicious paths. Achieved <strong>91.7%</strong> landmark-conditioned path
+                    redirection and proposed a robustness-aware detection mechanism improving navigation policy stability by
+                    <strong>96.3%</strong>.
+                </p>
+                <a href="https://github.com/programminglove08/RobustnessVisualNav/tree/main" target="_blank" class="small">
+                    <i class="fab fa-github"></i> Codebase
+                </a>
+            </div>
+        </div>
+
+        <!-- Project: Spatial-ViLT -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="font-weight-normal mb-1">Spatial-ViLT: Enhancing Visual Spatial Reasoning through Multi-Task Learning</h5>
+                    <span class="badge badge-pill badge-success ml-2 text-nowrap">ISVC 2025 · Oral</span>
+                </div>
+                <p class="text-muted small mb-2"><em>International Symposium on Visual Computing (ISVC 2025) · LNCS, Springer</em></p>
+                <p class="mb-2">
+                    Developed <strong>SpatialViLT</strong>, a vision-language model integrating depth maps, 3D coordinates,
+                    and edge representations via multi-task learning to improve spatial grounding for embodied intelligence.
+                    Improved the Visual Spatial Reasoning (VSR) benchmark by <strong>2.1%</strong>.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project: Hallucination / Vision Embeddings -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="font-weight-normal mb-1">Vision Embeddings and Hallucination Vulnerabilities in Multimodal LLMs</h5>
+                    <span class="badge badge-pill badge-secondary ml-2 text-nowrap">ISVC 2025 · Poster</span>
+                </div>
+                <p class="text-muted small mb-2"><em>International Symposium on Visual Computing (ISVC 2025)</em></p>
+                <p class="mb-2">
+                    Analyzed how vision encoder embeddings propagate hallucination vulnerabilities through multimodal LLMs,
+                    identifying representation-level failure modes that cause systematic visual misperception in deployed systems
+                    such as DeepSeek.
+                </p>
+                <a href="https://arxiv.org/abs/2502.07905" target="_blank" class="small">
+                    <i class="fas fa-file-alt"></i> Related arXiv
+                </a>
+            </div>
+        </div>
+
+        <!-- Project: Superresolution DeepFake -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <h5 class="font-weight-normal mb-1">Leveraging Superresolution for Enhanced Deep Fake Detection</h5>
+                <p class="mb-2">
+                    Evaluated state-of-the-art models for identifying low-resolution deep fakes in video data.
+                    Improved detection accuracy by <strong>19%</strong> on the FaceShifter dataset using Xception Net.
+                </p>
+                <a href="https://github.com/shuvornb/FakeImageDetection" target="_blank" class="small">
+                    <i class="fab fa-github"></i> Codebase
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
