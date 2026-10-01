@@ -2,7 +2,7 @@
 title: "Numerical Instability and Chaos: Quantifying the Unpredictability of Large Language Models"
 date: 2026-07-01 00:00:00 +0000
 selected: true
-pub: "International Joint Conference on Neural Networks (IJCNN 2026), IEEE WCCI"
+pub: "IEEE World Congress on Computational Intelligence (WCCI 2026), IJCNN"
 pub_last: ' <span class="badge badge-pill badge-publication badge-success">Oral</span>'
 pub_date: "2026"
 abstract: >-
@@ -18,4 +18,5 @@ authors:
 links:
   arXiv: https://arxiv.org/abs/2604.13206
   Code: https://github.com/meetchashi/llm_rounding_error_instability
+  PDF: https://arxiv.org/pdf/2604.13206
 ---

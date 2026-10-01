@@ -17,4 +17,7 @@ authors:
   - "Piyush Kumar"
 links:
   Code: https://github.com/programminglove08/RobustnessVisualNav/tree/main
+  Paper: https://doi.org/10.1109/IROS58592.2024.10802618
+  arXiv: https://arxiv.org/abs/2407.07392
+  PDF: https://arxiv.org/pdf/2407.07392
 ---

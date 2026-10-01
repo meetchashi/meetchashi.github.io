@@ -14,4 +14,9 @@ authors:
   - "Chashi Mahiul Islam"
   - "Fatema Tabassum Liza"
   - "Xiuwen Liu"
+links:
+  Paper: https://doi.org/10.1016/j.ins.2026.123112
+  arXiv: https://arxiv.org/abs/2410.19160
+  PDF: https://arxiv.org/pdf/2410.19160
+  Code: https://github.com/sj21j/Regularized_Relaxation
 ---

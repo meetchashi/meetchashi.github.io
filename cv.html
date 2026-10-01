@@ -119,6 +119,9 @@ navbar_title: CV
             <div class="card-body p-4">
                 <h5 class="border-bottom pb-2 mb-3">Publications &amp; Manuscripts</h5>
                 {% assign pubs = site.publications | sort: "date" | reverse %}
+                {% assign pinned_pubs = pubs | where: "pinned", true %}
+                {% assign other_pubs = pubs | where_exp: "item", "item.pinned != true" %}
+                {% assign pubs = pinned_pubs | concat: other_pubs %}
                 {% for item in pubs %}
                 <div class="mb-2 small">
                     <span>{{ forloop.index }}.</span>

@@ -14,4 +14,6 @@ authors:
   - "Forhan Bin Emdad"
   - "Chashi Mahiul Islam"
   - "Zhe He"
+links:
+  Paper: https://doi.org/10.1007/978-3-031-62520-6_66
 ---

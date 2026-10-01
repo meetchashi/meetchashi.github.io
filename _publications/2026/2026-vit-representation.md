@@ -2,6 +2,7 @@
 title: "On the Representation Vulnerability of Vision Transformers"
 date: 2026-01-01 00:00:00 +0000
 selected: false
+list_last: true
 pub: "Manuscript ready"
 pub_date: "2026"
 pub_last: " <span class=\"badge badge-pill badge-publication badge-secondary\">Manuscript ready</span>"

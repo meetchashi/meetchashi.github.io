@@ -6,15 +6,18 @@ body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
 
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.pub_date" %}
 
 <div class="row">
     <div class="col-12 col-lg-10">
         {% for year in pubs_by_year %}
-        {% assign num_papers = year.items | size %}
+        {% assign pinned_pubs = year.items | where: "pinned", true %}
+        {% assign other_pubs = year.items | where_exp: "item", "item.pinned != true" | where_exp: "item", "item.list_last != true" %}
+        {% assign last_pubs = year.items | where: "list_last", true %}
+        {% assign year_pubs = pinned_pubs | concat: other_pubs | concat: last_pubs %}
         <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
-            {% for item in year.items %}
+            {% for item in year_pubs %}
                 {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
             {% endfor %}
         </div>

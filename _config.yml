@@ -1,6 +1,9 @@
 # Site settings
 baseurl: ""  # empty for meetchashi.github.io (user GitHub Pages site)
 
+# Keep dated entries in their stated calendar year.
+timezone: Etc/UTC
+
 # Build settings
 markdown: kramdown
 plugins:

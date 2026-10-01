@@ -22,4 +22,7 @@ authors:
   - "Muhammad Rayhan Shikder"
   - "Syed Ishtiaque Ahmed"
   - "A. B. M. Alim Al Islam"
+links:
+  Paper: https://doi.org/10.1007/978-3-031-34776-4_26
+  PDF: https://rudaibaadnin.github.io/publications/InnerEye-MobiQuitous2022.pdf
 ---

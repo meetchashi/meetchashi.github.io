@@ -14,4 +14,8 @@ authors:
   - "Samuel Jacob Chacko"
   - "Mao Nishino"
   - "Xiuwen Liu"
+links:
+  Paper: https://doi.org/10.1007/978-3-032-14492-8_3
+  arXiv: https://arxiv.org/abs/2502.04679
+  PDF: https://arxiv.org/pdf/2502.04679
 ---

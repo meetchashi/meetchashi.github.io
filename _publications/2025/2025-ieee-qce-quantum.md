@@ -15,4 +15,6 @@ authors:
   - "Jake Scally"
   - "Xiuwen Liu"
   - "Bayaner Arigong"
+links:
+  Paper: https://doi.org/10.1109/QCE65121.2025.10345
 ---

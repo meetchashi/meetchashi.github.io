@@ -15,4 +15,5 @@ authors:
   - Xiuwen Liu
 links:
   arXiv: https://arxiv.org/abs/2502.07905
+  PDF: https://arxiv.org/pdf/2502.07905
 ---
