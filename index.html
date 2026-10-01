@@ -20,6 +20,7 @@ navbar_title: Home
         {% assign count_news = site.news | size %}
         {% if count_news > 0 %}
         {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+        <p class="text-right small"><a href="{{ "/news" | relative_url }}">All news <i class="fas fa-arrow-right"></i></a></p>
         {% endif %}
         {% endif %}
 

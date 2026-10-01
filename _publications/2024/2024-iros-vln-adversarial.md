@@ -10,11 +10,11 @@ abstract: >-
   models to redirect robotic agents along malicious paths, achieving 91.7% landmark-conditioned path
   redirection and proposing a detection mechanism that improves navigation policy stability by 96.3%.
 authors:
-  - Chashi Mahiul Islam
-  - S. Salman
-  - M. Shams
-  - Xiuwen Liu
-  - P. Kumar
+  - "Chashi Mahiul Islam*"
+  - "Shaeke Salman*"
+  - "Montasir Shams"
+  - "Xiuwen Liu"
+  - "Piyush Kumar"
 links:
   Code: https://github.com/programminglove08/RobustnessVisualNav/tree/main
 ---

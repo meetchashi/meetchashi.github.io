@@ -24,10 +24,13 @@ short_bio: >-
   <p>
     I design mechanisms to detect and mitigate these vulnerabilities in Vision Transformers (ViTs),
     vision-language models (VLMs), and large language models (LLMs).
-    My work has been published at top venues including <strong>IROS 2024</strong>, <strong>ISVC 2025</strong>,
-    and <strong>WCCI 2026</strong>.
+    My work spans <strong>IROS 2024</strong>, <strong>ISVC 2025</strong>, and <strong>IJCNN 2026</strong>.
+    Our paper <strong>Neural Expansion: A Unified Mechanism for How Deep Neural Networks Generalize</strong>
+    has been accepted at <strong>NeurIPS 2026</strong>.
   </p>
   <p>
+    In Summer 2026, I worked at <strong>Chewy</strong> as a <strong>Machine Learning Engineer II</strong>,
+    focusing on harness optimization and evaluation for an <strong>AI shopping assistant</strong>.
     In Summer 2025, I interned at <strong>Meta</strong> (Seattle, WA), optimizing large-scale feed ranking systems.
     I also hold an M.Sc. in Computer Science from FSU (GPA: 3.97/4.00) and a B.Sc. in CSE from
     <a href="https://www.buet.ac.bd/" target="_blank">Bangladesh University of Engineering and Technology (BUET)</a>.
@@ -49,8 +52,8 @@ education:
 
 experience:
 - name: Chewy
-  position: Machine Learning Intern II
-  dept: "Bellevue, WA - AI Shopping Assistant"
+  position: Machine Learning Engineer II
+  dept: "Bellevue, WA — AI shopping assistant harness optimization and evaluation"
   date: Jun. 2026 – Aug. 2026
 - name: Meta
   position: Software Engineer Intern
@@ -63,7 +66,7 @@ experience:
 - name: Florida State University
   position: Graduate Teaching Assistant
   dept: "Dept. of Computer Science"
-  date: Jan. 2021 – Present
+  date: Jan. 2021 – Jul. 2024
 - name: CoKreates Limited
   position: Software Developer
   dept: "Dhaka, Bangladesh — ERP system"

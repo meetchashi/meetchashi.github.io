@@ -10,8 +10,8 @@ abstract: >-
   and propose NeuroShield-ViT, which neutralizes vulnerable neurons to improve classification accuracy
   by 54.85% against PGD attacks and 71.6% against IGO attacks on ImageNet1K.
 authors:
-  - Chashi Mahiul Islam
-  - S. Jacob Chacko
-  - M. Nishino
-  - Xiuwen Liu
+  - "Chashi Mahiul Islam"
+  - "Samuel Jacob Chacko"
+  - "Mao Nishino"
+  - "Xiuwen Liu"
 ---

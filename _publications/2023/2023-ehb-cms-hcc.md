@@ -10,8 +10,8 @@ abstract: >-
   Hierarchical Condition Category (HCC) risk scores for disabled Medicare beneficiaries, revealing
   systemic disparities in risk assessment.
 authors:
-  - M.I. Rahman
-  - F.B. Emdad
-  - Chashi Mahiul Islam
-  - Z. He
+  - "Mohammad Ishtiaque Rahman"
+  - "Forhan Bin Emdad"
+  - "Chashi Mahiul Islam"
+  - "Zhe He"
 ---

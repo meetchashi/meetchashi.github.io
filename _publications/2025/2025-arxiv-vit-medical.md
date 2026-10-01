@@ -9,11 +9,11 @@ abstract: >-
   features in the medical imaging domain, finding systematic gaps between representation geometry and
   clinical semantics.
 authors:
-  - M. Shams
-  - Chashi Mahiul Islam
-  - S. Salman
-  - P. Tran
-  - Xiuwen Liu
+  - "Montasir Shams"
+  - "Chashi Mahiul Islam"
+  - "Shaeke Salman"
+  - "Phat Tran"
+  - "Xiuwen Liu"
 links:
   arXiv: https://arxiv.org/abs/2507.01788
 ---

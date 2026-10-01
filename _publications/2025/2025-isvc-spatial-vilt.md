@@ -11,9 +11,9 @@ abstract: >-
   via multi-task learning, improving 3D spatial grounding for embodied intelligence and achieving a 2.1%
   gain on the Visual Spatial Reasoning (VSR) benchmark.
 authors:
-  - Chashi Mahiul Islam
-  - O. Mamo
-  - S. Jacob Chacko
-  - Xiuwen Liu
-  - W. Yu
+  - "Chashi Mahiul Islam*"
+  - "Oteo Mamo*"
+  - "Samuel Jacob Chacko"
+  - "Xiuwen Liu"
+  - "Weikuan Yu"
 ---

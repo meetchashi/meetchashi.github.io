@@ -9,10 +9,17 @@ abstract: >-
   We study how Instagram filters alter user interaction patterns and build automated classifiers to
   identify the extent of image filtering, providing insight into social media image perception.
 authors:
-  - G.A. Rakib
-  - R. Adnin
-  - S.A.A. Bashir
-  - Chashi Mahiul Islam
-  - A.M. Turza
-  - S. Manzur
+  - "Gazi Abdur Rakib"
+  - "Rudaiba Adnin"
+  - "Shekh Ahammed Adnan Bashir"
+  - "Chashi Mahiul Islam"
+  - "Abir Mohammad Turza"
+  - "Saad Manzur"
+  - "Monowar Anjum Rashik"
+  - "Abdus Salam Azad"
+  - "Tusher Chakraborty"
+  - "Sydur Rahaman"
+  - "Muhammad Rayhan Shikder"
+  - "Syed Ishtiaque Ahmed"
+  - "A. B. M. Alim Al Islam"
 ---

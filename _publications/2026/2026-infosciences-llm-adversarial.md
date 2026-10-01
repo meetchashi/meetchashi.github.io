@@ -5,13 +5,13 @@ selected: false
 pub: "Information Sciences"
 pub_date: "2026"
 abstract: >-
-  A regularized gradient-based adversarial attack for LLMs that generates valid adversarial tokens
-  through continuous optimization, improving attack success rate by ~60% and reducing time by 3 orders
-  of magnitude over prior methods.
+  Regularized Relaxation optimizes adversarial suffix embeddings and converts them into valid vocabulary
+  tokens, improving attack success across evaluated LLMs and benchmarks and running roughly
+  100 times faster than the compared greedy coordinate gradient search.
 authors:
-  - S. Jacob Chacko
-  - S. Biswas
-  - Chashi Mahiul Islam
-  - F.T. Liza
-  - Xiuwen Liu
+  - "Samuel Jacob Chacko*"
+  - "Sajib Biswas*"
+  - "Chashi Mahiul Islam"
+  - "Fatema Tabassum Liza"
+  - "Xiuwen Liu"
 ---

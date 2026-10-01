@@ -8,11 +8,11 @@ abstract: >-
   We apply rough transformer architectures to model statistical time series of quantum systems,
   demonstrating improved forecasting of quantum state evolution over classical baselines.
 authors:
-  - Y. Shao
-  - Chashi Mahiul Islam
-  - S. Jacob Chacko
-  - R. Carmichael
-  - J. Scally
-  - Xiuwen Liu
-  - B. Arigong
+  - "Yuanhang Shao"
+  - "Chashi Mahiul Islam"
+  - "Samuel Jacob Chacko"
+  - "Ryan Carmichael"
+  - "Jake Scally"
+  - "Xiuwen Liu"
+  - "Bayaner Arigong"
 ---

@@ -9,8 +9,8 @@ abstract: >-
   We analyze how vision encoder embeddings propagate hallucination vulnerabilities through multimodal LLMs,
   identifying representation-level failure modes that cause systematic visual misperception.
 authors:
-  - Chashi Mahiul Islam
-  - S. Jacob Chacko
-  - P. Horne
-  - Xiuwen Liu
+  - "Chashi Mahiul Islam*"
+  - "Samuel Jacob Chacko*"
+  - "Preston Horne"
+  - "Xiuwen Liu"
 ---
