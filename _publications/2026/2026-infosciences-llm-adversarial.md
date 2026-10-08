@@ -5,9 +5,10 @@ selected: false
 pub: "Information Sciences"
 pub_date: "2026"
 abstract: >-
-  Regularized Relaxation optimizes adversarial suffix embeddings and converts them into valid vocabulary
-  tokens, improving attack success across evaluated LLMs and benchmarks and running roughly
-  100 times faster than the compared greedy coordinate gradient search.
+  We co-developed Regularized Relaxation, which continuously optimizes adversarial suffix embeddings
+  with regularization and maps them into valid vocabulary tokens. The method improves attack success
+  across five LLMs and runs roughly 100 times faster than the compared greedy coordinate gradient
+  (GCG) search.
 authors:
   - "Samuel Jacob Chacko*"
   - "Sajib Biswas*"

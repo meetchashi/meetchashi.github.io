@@ -13,6 +13,65 @@ navbar_title: Research
             failures in vision-language understanding, embodied navigation, and LLM reasoning.
         </p>
 
+        <!-- Project: ActivationGuard -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <h5 class="font-weight-normal mb-1">ActivationGuard: Prompt Injection Detection in LLM Agents</h5>
+                    <span class="badge badge-pill badge-secondary ml-2 text-nowrap">Under review</span>
+                </div>
+                <p class="text-muted small mb-2"><em>Frozen LLM hidden states, logistic regression · 2026</em></p>
+                <p class="mb-2">
+                    Built a lightweight detector for indirect prompt injection in network-integrated LLM agents
+                    using logistic regression on frozen LLM hidden states. Expanded training coverage raised
+                    attack recall from <strong>17.2% to 93.8%</strong> under a <strong>5% false-positive-rate
+                    validation budget</strong>, achieving <strong>0.979 AUROC</strong>.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project: Regularized Relaxation -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <h5 class="font-weight-normal mb-1">Adversarial Attacks on LLMs via Regularized Relaxation</h5>
+                    <span class="badge badge-pill badge-success ml-2 text-nowrap">Information Sciences 2026</span>
+                </div>
+                <p class="mb-2">
+                    Co-developed regularized continuous optimization of adversarial suffix embeddings with
+                    mapping to valid vocabulary tokens. Improved attack success across <strong>five LLMs</strong>
+                    while running approximately <strong>100 times faster</strong> than greedy coordinate gradient
+                    (GCG) search.
+                </p>
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0020025526000435" target="_blank" class="small mr-3">
+                    <i class="fas fa-file-alt"></i> Paper
+                </a>
+                <a href="https://github.com/sj21j/Regularized_Relaxation" target="_blank" class="small">
+                    <i class="fab fa-github"></i> Codebase
+                </a>
+            </div>
+        </div>
+
+        <!-- Project: Tool-Grounded Agent Evaluation -->
+        <div class="card border-0 shadow-sm bg-white mb-3">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <h5 class="font-weight-normal mb-1">Instruction Strategies for Tool-Grounded AI Agents</h5>
+                    <span class="badge badge-pill badge-primary ml-2 text-nowrap">AgentSkills 2026 · Poster</span>
+                </div>
+                <p class="text-muted small mb-2"><em>MCP, agent evaluation · ACM CAIS 2026 AgentSkills Workshop</em></p>
+                <p class="mb-2">
+                    Evaluated instruction strategies in <strong>180 cybersecurity-agent runs</strong> across
+                    <strong>four guidance levels</strong>. Increasing context from <strong>591 to 36,001 tokens</strong>
+                    produced no significant success-rate gain, suggesting that additional procedural guidance
+                    may have limited value when the tool environment already supplies useful feedback.
+                </p>
+                <a href="https://arxiv.org/abs/2605.20023" target="_blank" class="small">
+                    <i class="fas fa-file-alt"></i> arXiv
+                </a>
+            </div>
+        </div>
+
         <!-- Project: Neural Expansion -->
         <div class="card border-0 shadow-sm bg-white mb-3">
             <div class="card-body p-4">
@@ -27,6 +86,9 @@ navbar_title: Research
                     Stable regions grow during training; a theoretical bound connects interval size to
                     classification margin and directional sensitivity.
                 </p>
+                <a href="https://neurips.cc/virtual/2026/poster/153306" target="_blank" class="small mr-3">
+                    <i class="fas fa-file-alt"></i> Paper
+                </a>
                 <a href="https://github.com/meetchashi/neural_expansion" target="_blank" class="small">
                     <i class="fab fa-github"></i> Codebase
                 </a>
@@ -44,7 +106,8 @@ navbar_title: Research
                 <p class="mb-2">
                     Discovered that microscopic floating-point input perturbations cause <strong>up to 10-million-fold
                     amplification</strong> through LLM layers, collapsing logit margins and triggering unpredictable
-                    token flips — revealing a fundamental numerical chaos regime in large language models.
+                    token flips. Quantified regimes of stability and rounding-induced chaos to characterize
+                    when LLM predictions remain stable or become unpredictable.
                 </p>
                 <a href="https://arxiv.org/abs/2604.13206" target="_blank" class="small mr-3">
                     <i class="fas fa-file-alt"></i> arXiv
@@ -65,10 +128,13 @@ navbar_title: Research
                 <p class="text-muted small mb-2"><em>International Symposium on Visual Computing (ISVC 2025)</em></p>
                 <p class="mb-2">
                     Examined how small input changes affect layer-wise representations in Vision Transformers (ViTs).
-                    Proposed <strong>NeuroShield-ViT</strong> to neutralize vulnerable neurons and enhance adversarial robustness,
-                    improving classification accuracy by <strong>54.85%</strong> against PGD attacks and <strong>71.6%</strong>
-                    against IGO attacks on ImageNet1K.
+                    Proposed <strong>NeuroShield-ViT</strong> to neutralize vulnerable neurons and enhance adversarial robustness
+                    <strong>without retraining</strong>, raising <strong>PGD-100 accuracy from 15.6% to 72.3%</strong>.
+                    Classification accuracy also improved by <strong>71.6%</strong> against IGO attacks on ImageNet1K.
                 </p>
+                <a href="https://doi.org/10.1007/978-3-032-14492-8_3" target="_blank" class="small">
+                    <i class="fas fa-file-alt"></i> Paper
+                </a>
             </div>
         </div>
 
@@ -83,9 +149,12 @@ navbar_title: Research
                 <p class="mb-2">
                     Developed algorithms that exploit semantic representation gaps in vision-language navigation (VLN) models
                     to redirect robotic agents along malicious paths. Achieved <strong>91.7%</strong> landmark-conditioned path
-                    redirection and proposed a robustness-aware detection mechanism improving navigation policy stability by
+                    redirection and proposed a noise-sensitivity-based detection mechanism improving navigation policy stability by
                     <strong>96.3%</strong>.
                 </p>
+                <a href="https://ieeexplore.ieee.org/document/10802618" target="_blank" class="small mr-3">
+                    <i class="fas fa-file-alt"></i> Paper
+                </a>
                 <a href="https://github.com/programminglove08/RobustnessVisualNav/tree/main" target="_blank" class="small">
                     <i class="fab fa-github"></i> Codebase
                 </a>
@@ -105,6 +174,9 @@ navbar_title: Research
                     and edge representations via multi-task learning to improve spatial grounding for embodied intelligence.
                     Improved the Visual Spatial Reasoning (VSR) benchmark by <strong>2.1%</strong>.
                 </p>
+                <a href="https://doi.org/10.1007/978-3-032-14495-9_4" target="_blank" class="small">
+                    <i class="fas fa-file-alt"></i> Paper
+                </a>
             </div>
         </div>
 
@@ -121,6 +193,9 @@ navbar_title: Research
                     identifying representation-level failure modes that cause systematic visual misperception in deployed systems
                     such as DeepSeek.
                 </p>
+                <a href="https://link.springer.com/chapter/10.1007/978-3-032-14495-9_32" target="_blank" class="small mr-3">
+                    <i class="fas fa-file-alt"></i> Paper
+                </a>
                 <a href="https://arxiv.org/abs/2502.07905" target="_blank" class="small">
                     <i class="fas fa-file-alt"></i> Related arXiv
                 </a>
@@ -131,9 +206,11 @@ navbar_title: Research
         <div class="card border-0 shadow-sm bg-white mb-3">
             <div class="card-body p-4">
                 <h5 class="font-weight-normal mb-1">Leveraging Superresolution for Enhanced Deep Fake Detection</h5>
+                <p class="text-muted small mb-2"><em>Xception, super-resolution · 2022</em></p>
                 <p class="mb-2">
                     Evaluated state-of-the-art models for identifying low-resolution deep fakes in video data.
-                    Improved detection accuracy by <strong>19%</strong> on the FaceShifter dataset using Xception Net.
+                    Added super-resolution to improve test accuracy by <strong>19%</strong> on the FaceShifter
+                    dataset using Xception Net.
                 </p>
                 <a href="https://github.com/shuvornb/FakeImageDetection" target="_blank" class="small">
                     <i class="fab fa-github"></i> Codebase

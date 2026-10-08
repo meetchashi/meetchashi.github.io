@@ -8,7 +8,8 @@ pub_date: "2026"
 abstract: >-
   We discover that microscopic floating-point input perturbations cause up to 10-million-fold amplification
   through LLM layers, collapsing logit margins and triggering unpredictable token flips — revealing a
-  fundamental numerical chaos regime in large language models.
+  fundamental numerical chaos regime in large language models. We quantify regimes of stability
+  and rounding-induced chaos to characterize when LLM predictions remain stable or become unpredictable.
 authors:
   - "Chashi Mahiul Islam"
   - "Alan Villarreal"

@@ -24,7 +24,8 @@ short_bio: >-
   <p>
     I design mechanisms to detect and mitigate these vulnerabilities in Vision Transformers (ViTs),
     vision-language models (VLMs), and large language models (LLMs).
-    My work spans <strong>IROS 2024</strong>, <strong>ISVC 2025</strong>, and <strong>IJCNN 2026</strong>.
+    My work has been published at <strong>IROS 2024</strong>, <strong>ISVC 2025</strong>,
+    and <strong>WCCI-IJCNN 2026</strong>, and in <strong>Information Sciences (2026)</strong>.
     Our paper <strong>Neural Expansion: A Unified Mechanism for How Deep Neural Networks Generalize</strong>
     has been accepted at <strong>NeurIPS 2026</strong>.
   </p>

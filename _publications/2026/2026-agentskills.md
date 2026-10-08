@@ -5,7 +5,12 @@ selected: false
 pub: "ACM CAIS 2026 AgentSkills Workshop"
 pub_date: "2026"
 pub_last: " <span class=\"badge badge-pill badge-publication badge-primary\">Poster</span>"
-abstract: "We reinterpreted a controlled cybersecurity-agent study as a four-level Skills comparison and proposed environment feedback as an explanation for limited gains. More instructions are not automatically better; their value may depend on how much guidance the tool environment already supplies."
+abstract: >-
+  We evaluated instruction strategies for MCP-based, tool-grounded cybersecurity agents in 180 runs
+  across four guidance levels. Increasing context from 591 to 36,001 tokens produced no significant
+  success-rate gain. We reinterpreted the study as a four-level Skills comparison and proposed
+  environment feedback as an explanation for limited gains: the value of additional instructions
+  may depend on how much guidance the tool environment already supplies.
 authors:
   - "Samuel Jacob Chacko*"
   - "James Hugglestone*"

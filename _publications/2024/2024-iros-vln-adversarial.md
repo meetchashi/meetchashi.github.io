@@ -8,7 +8,8 @@ pub_date: "2024"
 abstract: >-
   We develop adversarial algorithms that exploit semantic representation gaps in vision-language navigation
   models to redirect robotic agents along malicious paths, achieving 91.7% landmark-conditioned path
-  redirection and proposing a detection mechanism that improves navigation policy stability by 96.3%.
+  redirection and proposing a noise-sensitivity-based detection mechanism that improves navigation
+  policy stability by 96.3%.
 authors:
   - "Chashi Mahiul Islam*"
   - "Shaeke Salman*"

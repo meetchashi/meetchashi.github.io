@@ -7,8 +7,9 @@ pub_last: ' <span class="badge badge-pill badge-publication badge-success">Oral<
 pub_date: "2025"
 abstract: >-
   We examine how small input changes affect layer-wise representations in Vision Transformers (ViTs)
-  and propose NeuroShield-ViT, which neutralizes vulnerable neurons to improve classification accuracy
-  by 54.85% against PGD attacks and 71.6% against IGO attacks on ImageNet1K.
+  and propose NeuroShield-ViT, which neutralizes vulnerable neurons without retraining.
+  PGD-100 accuracy improves from 15.6% to 72.3%; classification accuracy also improves by 71.6%
+  against IGO attacks on ImageNet1K.
 authors:
   - "Chashi Mahiul Islam"
   - "Samuel Jacob Chacko"
