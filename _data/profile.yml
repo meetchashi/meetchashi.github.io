@@ -30,9 +30,13 @@ short_bio: >-
     has been accepted at <strong>NeurIPS 2026</strong>.
   </p>
   <p>
-    In Summer 2026, I worked at <strong>Chewy</strong> as a <strong>Machine Learning Engineer II</strong>,
-    focusing on harness optimization and evaluation for an <strong>AI shopping assistant</strong>.
-    In Summer 2025, I interned at <strong>Meta</strong> (Seattle, WA), optimizing large-scale feed ranking systems.
+    In Summer 2026, I interned at <strong>Chewy</strong> as a <strong>Machine Learning Engineer Intern II</strong>,
+    building a context-aware LLM personalization framework for an <strong>AI shopping assistant</strong>
+    using context injection, proxy orchestration, and prompt optimization. Personalization scores
+    improved by <strong>20% (3.5 to 4.2)</strong> across four rubrics.
+    In Summer 2025, I interned at <strong>Meta</strong> (Seattle, WA), integrating vision features
+    into a prompt generation model for large-scale feed ranking and improving click-rate prediction
+    AUROC by <strong>3.4%</strong>.
     I also hold an M.Sc. in Computer Science from FSU (GPA: 3.97/4.00) and a B.Sc. in CSE from
     <a href="https://www.buet.ac.bd/" target="_blank">Bangladesh University of Engineering and Technology (BUET)</a>.
   </p>
@@ -53,12 +57,12 @@ education:
 
 experience:
 - name: Chewy
-  position: Machine Learning Engineer II
-  dept: "Bellevue, WA — AI shopping assistant harness optimization and evaluation"
+  position: Machine Learning Engineer Intern II
+  dept: "Bellevue, WA — Context-aware LLM personalization for an AI shopping assistant"
   date: Jun. 2026 – Aug. 2026
 - name: Meta
   position: Software Engineer Intern
-  dept: "Seattle, WA — Large-scale feed ranking systems"
+  dept: "Seattle, WA — Vision features and prompt generation for large-scale feed ranking"
   date: May 2025 – Aug. 2025
 - name: Florida State University
   position: Graduate Research Assistant
