@@ -1,0 +1,112 @@
+{% case include.design %}
+{% when 'learned' %}
+{% assign design_title = 'Learned positions · change each input row' %}
+{% assign input_label = 'Word embeddings' %}
+{% assign operation = 'Add one learned position row to each word row' %}
+{% assign result_label = 'Position-aware input' %}
+{% assign result_dog = '0.3 · 0.7 · 0.5 · 0.6' %}
+{% assign result_bites = '0.8 · 0.4 · 0.3 · 0.7' %}
+{% assign result_man = '0.5 · 0.7 · 0.8 · 0.3' %}
+{% assign explanation = 'The three word rows become three word-plus-position rows. The position rows come from a learned table. Attention is computed from these combined rows.' %}
+{% assign accent = 'pe-a' %}
+{% when 'sinusoidal' %}
+{% assign design_title = 'Sinusoidal positions · same addition, different source' %}
+{% assign input_label = 'Word embeddings' %}
+{% assign operation = 'Add one clock-pattern row to each word row' %}
+{% assign result_label = 'Position-aware input' %}
+{% assign result_dog = '0.2 · 1.6 · 0.1 · 1.8' %}
+{% assign result_bites = '1.5 · 0.8 · 0.5 · 1.1' %}
+{% assign result_man = '1.3 · 0.1 · 0.9 · 1.2' %}
+{% assign explanation = 'The input rows change just as they did with learned positions. Here the added rows are generated from sine and cosine clocks rather than retrieved from a learned position table.' %}
+{% assign accent = 'pe-a' %}
+{% when 'shaw' %}
+{% assign design_title = 'Shaw · add relationship information inside attention' %}
+{% assign operation = 'For each word pair, use a learned relative-offset vector' %}
+{% assign explanation = 'Start from the same word rows. Make queries, keys, and values. When bites compares with dog, their relative-offset vector modifies the key comparison; another relative vector modifies the value being gathered. There is a separate relationship for each pair, not one position row added to each input word.' %}
+{% assign detail = 'Query for bites + key for dog + “one token before” → their match. Value for dog + relative-value information → what is gathered.' %}
+{% assign accent = 'pe-b' %}
+{% when 'xl' %}
+{% assign design_title = 'Transformer-XL · compare current rows with remembered rows' %}
+{% assign operation = 'Use current queries, current / remembered keys, and relative distances' %}
+{% assign explanation = 'Current token rows form queries. Keys and values can also come from stored representations of earlier tokens. Relative-position terms enter the matching calculation. The number of current output rows stays the same even when the model consults additional memory rows.' %}
+{% assign detail = '3 current tokens + 2 remembered tokens → 3 queries compare with 5 keys → 3 updated token rows.' %}
+{% assign accent = 'pe-b' %}
+{% when 't5' %}
+{% assign design_title = 'T5 · change the pairwise scores' %}
+{% assign operation = 'Add a learned distance-bucket bias to each score' %}
+{% assign explanation = 'Make queries, keys, and values from the word rows. First calculate the ordinary content matches. Then add a distance-bucket number to each pair’s score. The bias changes how much information is gathered from each value row.' %}
+{% assign detail = 'The same bucket is reused for pairs in the same distance group. Heads can learn different bias values.' %}
+{% assign accent = 'pe-b' %}
+{% when 'deberta' %}
+{% assign design_title = 'DeBERTa · compare content and position separately' %}
+{% assign operation = 'Combine content↔content, content↔position, and position↔content matches' %}
+{% assign explanation = 'Keep the content rows separate from the relative-position representations used in attention. Build pairwise scores using their separate comparisons, then gather content values according to those scores. Position is involved in the comparison without first being added to every input word row.' %}
+{% assign detail = 'For bites and dog: meaning↔meaning + meaning↔relative place + relative place↔meaning → one combined match score.' %}
+{% assign accent = 'pe-b' %}
+{% when 'alibi' %}
+{% assign design_title = 'ALiBi · subtract a distance cost from the scores' %}
+{% assign operation = 'Subtract a fixed per-step distance penalty from each allowed score' %}
+{% assign explanation = 'Make queries, keys, and values from the word rows. Their content comparisons produce a score grid. ALiBi changes that grid, rather than adding a position vector to the embeddings or rotating queries and keys. The resulting weights decide how to mix the value rows.' %}
+{% assign detail = 'For a head charging 0.5 per step: one token back subtracts 0.5; two tokens back subtracts 1.0. Future tokens are masked in a causal model.' %}
+{% assign accent = 'pe-b' %}
+{% when 'rope' %}
+{% assign design_title = 'RoPE · change the query and key rows before matching' %}
+{% assign operation = 'Rotate number pairs inside each query and key row' %}
+{% assign explanation = 'Make queries, keys, and values from the word rows. Rotate query and key pairs according to token position, then compare the rotated rows. Values are not rotated by standard RoPE. Different matches mean different mixtures of values, so the output rows still become position-aware.' %}
+{% assign detail = 'Word row → query / key / value. Query + key take positional turns → match scores → weights → a mixture of the unrotated values.' %}
+{% assign accent = 'pe-c' %}
+{% endcase %}
+<figure class="pe-scene pe-transform {{ accent }}">
+    <span class="pe-eyebrow">{{ design_title }}</span>
+    {% if include.design == 'learned' or include.design == 'sinusoidal' %}
+    <div class="pe-vector-pair">
+        <div class="pe-vector-panel"><strong>{{ input_label }}</strong>
+            <div class="pe-vector-line"><span>dog</span> <code>[0.2 · 0.6 · 0.1 · 0.8]</code></div>
+            <div class="pe-vector-line"><span>bites</span> <code>[0.7 · 0.3 · 0.5 · 0.1]</code></div>
+            <div class="pe-vector-line"><span>man</span> <code>[0.4 · 0.5 · 0.9 · 0.2]</code></div>
+        </div>
+        <div class="pe-vector-panel pe-changed"><strong>{{ result_label }}</strong>
+            <div class="pe-vector-line"><span>dog</span> <code>[{{ result_dog }}]</code></div>
+            <div class="pe-vector-line"><span>bites</span> <code>[{{ result_bites }}]</code></div>
+            <div class="pe-vector-line"><span>man</span> <code>[{{ result_man }}]</code></div>
+        </div>
+    </div>
+    <p class="pe-change-label">{{ operation }}</p>
+    {% if include.design == 'learned' %}
+    <p class="pe-vector-example">For dog: [0.2, 0.6, 0.1, 0.8] + position row [0.1, 0.1, 0.4, −0.2] = [0.3, 0.7, 0.5, 0.6].</p>
+    {% else %}
+    <p class="pe-vector-example">For dog at the first position: [0.2, 0.6, 0.1, 0.8] + clock row [0, 1, 0, 1] = [0.2, 1.6, 0.1, 1.8].</p>
+    {% endif %}
+    {% else %}
+    <div class="pe-mini-flow">
+        <div class="pe-flow-box"><strong>Same input embeddings</strong><span>dog → one row</span> <span>bites → one row</span> <span>man → one row</span></div>
+        <span class="pe-flow-arrow" aria-hidden="true">→</span>
+        <div class="pe-flow-box"><strong>Make q, k, and v</strong><span>Query rows: looking</span> <span>Key rows: matching</span> <span>Value rows: information</span></div>
+        <span class="pe-flow-arrow" aria-hidden="true">→</span>
+        <div class="pe-flow-box pe-changed"><strong>Position enters here</strong><span>{{ operation }}</span></div>
+    </div>
+    <p class="pe-vector-example">{{ detail }}</p>
+    {% endif %}
+    {% if include.design == 't5' or include.design == 'alibi' %}
+    <div class="pe-score-example">
+        <strong>Follow the score row for “bites”</strong>
+        <p>Columns: dog · bites · man. We allow only the past and present in this example.</p>
+        <div class="pe-vector-line"><span>Before</span> <code>[1.2 · 0.4 · hidden]</code></div>
+        {% if include.design == 't5' %}
+        <div class="pe-vector-line"><span>Add</span> <code>[+0.8 · 0 · hidden] ← learned bucket biases</code></div>
+        <div class="pe-vector-line"><span>After</span> <code>[2.0 · 0.4 · hidden]</code></div>
+        {% else %}
+        <div class="pe-vector-line"><span>Add</span> <code>[−0.5 · 0 · hidden] ← fixed distance penalties</code></div>
+        <div class="pe-vector-line"><span>After</span> <code>[0.7 · 0.4 · hidden]</code></div>
+        {% endif %}
+        <p>The content scores are invented for this illustration. These are scores, not probabilities. After this change, attention converts them into weights.</p>
+    </div>
+    {% elsif include.design == 'rope' %}
+    <div class="pe-score-example">
+        <strong>Look inside one query row</strong>
+        <p>For this illustration, a pair starts as [1, 0]. At position 1, a 30° turn changes it to about [0.866, 0.500]. Its row still contains two numbers; only their values change. The key pairs get their own turns before the match.</p>
+    </div>
+    {% endif %}
+    <div class="pe-output-strip"><strong>Attention gathers information →</strong> <span>updated dog row</span> <span>updated bites row</span> <span>updated man row</span></div>
+    <figcaption>{{ explanation }} Numbers in the row examples are illustrative; sinusoidal results are rounded. This traces the positional attention component, with other model operations omitted.</figcaption>
+</figure>

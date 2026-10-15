@@ -1,0 +1,29 @@
+<figure class="pe-figure pe-rope-demo" data-rope-demo>
+    <span class="pe-eyebrow">Try it · move the words, watch the arrows</span>
+    <svg viewBox="0 0 760 280" role="img" aria-labelledby="rope-title rope-desc">
+        <title id="rope-title">RoPE preserves the relative angle when both positions shift together</title>
+        <desc id="rope-desc">For q and k initially equal to (1, 0), rotations of thirty degrees per position give a dot product of cosine of their relative angle. Initially q is at 3 and k at 1: the gap is 2 and the dot product is 0.5.</desc>
+        <g fill="none" stroke="#d8dfee" stroke-width="2">
+            <circle cx="175" cy="140" r="95"/><circle cx="545" cy="140" r="95"/>
+            <path d="M65 140 H285 M175 30 V250 M435 140 H655 M545 30 V250"/>
+        </g>
+        <g stroke-width="5" stroke-linecap="round">
+            <line data-q-one x1="175" y1="140" x2="175" y2="45" stroke="#7541b2"/>
+            <line data-k-one x1="175" y1="140" x2="257.272" y2="92.5" stroke="#2459b4"/>
+            <line data-q-two x1="545" y1="140" x2="462.728" y2="92.5" stroke="#7541b2"/>
+            <line data-k-two x1="545" y1="140" x2="545" y2="45" stroke="#2459b4"/>
+        </g>
+        <g font-family="Arial, sans-serif" font-size="17" fill="#20314d" text-anchor="middle">
+            <text x="175" y="22">Original pair</text><text x="545" y="22">Both positions shifted</text>
+            <text x="175" y="275" data-original-label>Query at 3 · key at 1</text>
+            <text x="545" y="275" data-shift-label>Query at 5 · key at 3</text>
+        </g>
+    </svg>
+    <p class="pe-legend"><span class="pe-purple">● Query · looking</span> <span class="pe-blue">● Key · matching</span> · 30° per position</p>
+    <div class="pe-controls" hidden>
+        <label>Distance between the words <input type="range" min="0" max="6" value="2" step="1" data-gap></label>
+        <label>Move both words together <input type="range" min="0" max="8" value="2" step="1" data-shift></label>
+    </div>
+    <p class="pe-result" data-rope-result aria-live="polite" aria-atomic="true">2 steps apart · the arrows are 60° apart · alignment score 0.500 in both pictures.</p>
+    <figcaption>Both arrows start pointing right before their position turns are applied. Moving the words together preserves their angle apart. Changing the distance changes that angle. The score measures alignment, not an attention percentage. This is one simplified pair, not a full attention calculation.</figcaption>
+</figure>
